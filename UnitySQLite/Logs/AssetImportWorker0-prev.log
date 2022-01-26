@@ -1,0 +1,399 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.26f1 (7298b473bc1a) revision 7510196'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19041) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 8066 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/conta/UFRPE/lab/UnitySQLite/UnitySQLite
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59427
+Successfully changed project path to: C:/Users/conta/UFRPE/lab/UnitySQLite/UnitySQLite
+C:/Users/conta/UFRPE/lab/UnitySQLite/UnitySQLite
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 60.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.26f1 (7298b473bc1a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/conta/UFRPE/lab/UnitySQLite/UnitySQLite/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940MX (ID=0x134d)
+    Vendor:   
+    VRAM:     2010 MB
+    Driver:   30.0.14.7212
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003215 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 49.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.961 seconds
+Domain Reload Profiling:
+	ReloadAssembly (961ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (751ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (288ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (250ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (50ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006826 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.805 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1806ms)
+		BeginReloadAssembly (250ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (1435ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (538ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (511ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (372ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.31 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1503 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.5 MB.
+System memory in use after: 67.6 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1935.
+Total: 6.178700 ms (FindLiveObjects: 0.281200 ms CreateObjectMapping: 0.134000 ms MarkObjects: 5.645700 ms  DeleteObjects: 0.115700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.022037 seconds 
+  Import took 0.031819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.443254 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(84b068989f3f5844ea7147b9d2d3a42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(84b068989f3f5844ea7147b9d2d3a42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6935d83e89e154c2b1935f3d3184981') in 0.019891 seconds 
+  Import took 0.071279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.390993 seconds.
+  path: Assets/Plugins/Sq
+  artifactKey: Guid(61b1aedc07108ee48a9e7da3d52b231e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sq using Guid(61b1aedc07108ee48a9e7da3d52b231e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c2392c995480acc7ae922b13d9822c') in 0.016804 seconds 
+  Import took 0.082810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.760431 seconds.
+  path: Assets/Plugins/SQLite
+  artifactKey: Guid(61b1aedc07108ee48a9e7da3d52b231e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite using Guid(61b1aedc07108ee48a9e7da3d52b231e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a520af3095226e84a2d228275e4463') in 0.011437 seconds 
+  Import took 0.015618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.927306 seconds.
+  path: Assets/Plugins/SQLite/x64
+  artifactKey: Guid(d280334735e064047a07bb415493a200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/x64 using Guid(d280334735e064047a07bb415493a200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57ac2094874b5038942f81db2c7b8ef') in 0.015395 seconds 
+  Import took 0.031853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.657280 seconds.
+  path: Assets/Plugins/SQLite/x64 1
+  artifactKey: Guid(9426e14f4f75f274db3a4c8ba356769a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/x64 1 using Guid(9426e14f4f75f274db3a4c8ba356769a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd045feb48b350e0ec234fcb19acab009') in 0.015033 seconds 
+  Import took 0.019965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.361643 seconds.
+  path: Assets/Plugins/SQLite/x86
+  artifactKey: Guid(9426e14f4f75f274db3a4c8ba356769a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/x86 using Guid(9426e14f4f75f274db3a4c8ba356769a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3928623909ed513c51c79960a7773c') in 0.009823 seconds 
+  Import took 0.013985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.095454 seconds.
+  path: Assets/Plugins/SQLite/android
+  artifactKey: Guid(0432126b20cf738478ea9efe273ad71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android using Guid(0432126b20cf738478ea9efe273ad71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79bbbb5786e9363217636bd88935b2df') in 0.011698 seconds 
+  Import took 0.015475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.384354 seconds.
+  path: Assets/Plugins/SQLite/android/x86
+  artifactKey: Guid(4e3c3b7fedc32a840ad19ba0a74d8d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/x86 using Guid(4e3c3b7fedc32a840ad19ba0a74d8d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5046bba481932bc17daccf4e01340806') in 0.004415 seconds 
+  Import took 0.080188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.995709 seconds.
+  path: Assets/Plugins/SQLite/android/x86 1
+  artifactKey: Guid(414465b8f23c1ad4bbd9cef0824fc3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/x86 1 using Guid(414465b8f23c1ad4bbd9cef0824fc3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ff49ba7ca12fe9f0dbedae0151cc84') in 0.011461 seconds 
+  Import took 0.024039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.883679 seconds.
+  path: Assets/Plugins/SQLite/android/x64
+  artifactKey: Guid(414465b8f23c1ad4bbd9cef0824fc3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/x64 using Guid(414465b8f23c1ad4bbd9cef0824fc3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df882e5a387572a30db646444ffddcc') in 0.004497 seconds 
+  Import took 0.010741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.775864 seconds.
+  path: Assets/Plugins/SQLite/android/arm64-x8a
+  artifactKey: Guid(414465b8f23c1ad4bbd9cef0824fc3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/arm64-x8a using Guid(414465b8f23c1ad4bbd9cef0824fc3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed97729f70e90d0c635a10b00b52880') in 0.011607 seconds 
+  Import took 0.024899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.943458 seconds.
+  path: Assets/Plugins/SQLite/android/arm64-v8a
+  artifactKey: Guid(414465b8f23c1ad4bbd9cef0824fc3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/arm64-v8a using Guid(414465b8f23c1ad4bbd9cef0824fc3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a252d24a894c1e05fa4a7e12460a7f') in 0.014399 seconds 
+  Import took 0.019060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.086181 seconds.
+  path: Assets/Plugins/SQLite/android/armeabi-v8a
+  artifactKey: Guid(8cc62a15cbf20cb4e8a32286fb11373a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/armeabi-v8a using Guid(8cc62a15cbf20cb4e8a32286fb11373a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe6e738849c57bd557ec5af30a9a3fc') in 0.010779 seconds 
+  Import took 0.018629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.611196 seconds.
+  path: Assets/Plugins/SQLite/android/armeabi-v7a
+  artifactKey: Guid(8cc62a15cbf20cb4e8a32286fb11373a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/armeabi-v7a using Guid(8cc62a15cbf20cb4e8a32286fb11373a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9525b30e665eb26faf86193ba7833a') in 0.010722 seconds 
+  Import took 0.014344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 307.836017 seconds.
+  path: Assets/Plugins/SQLite/x86/sqlite3.dll
+  artifactKey: Guid(f033d012d10850146b159c26fa460a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/x86/sqlite3.dll using Guid(f033d012d10850146b159c26fa460a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ecf87d2c6520e33434fcc1ca706e8c') in 0.110003 seconds 
+  Import took 0.114193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.149919 seconds.
+  path: Assets/Plugins/SQLite/x86/sqlite3.dll
+  artifactKey: Guid(f033d012d10850146b159c26fa460a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/x86/sqlite3.dll using Guid(f033d012d10850146b159c26fa460a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a1bdf34fd78b930ea5804759af3ea9') in 0.003372 seconds 
+  Import took 0.007292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.675870 seconds.
+  path: Assets/Plugins/SQLite/x64/sqlite3.dll
+  artifactKey: Guid(65360953fb6d0a849ad4cd28df2eea63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/x64/sqlite3.dll using Guid(65360953fb6d0a849ad4cd28df2eea63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b2a791090d662211e8693a4d481950') in 0.006044 seconds 
+  Import took 0.044729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.917868 seconds.
+  path: Assets/Plugins/SQLite/x64/sqlite3.dll
+  artifactKey: Guid(65360953fb6d0a849ad4cd28df2eea63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/x64/sqlite3.dll using Guid(65360953fb6d0a849ad4cd28df2eea63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e5247e7257fb45c5d4d3f5806e292b') in 0.003255 seconds 
+  Import took 0.008199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1112.494579 seconds.
+  path: Assets/Plugins/SQLite/android/arm64-v8a/libsqlite3.so
+  artifactKey: Guid(d11ec282511b335448519bb7d426c9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/arm64-v8a/libsqlite3.so using Guid(d11ec282511b335448519bb7d426c9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a83bf126f11fb58560c349e463984c3a') in 0.160550 seconds 
+  Import took 0.163383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.264492 seconds.
+  path: Assets/Plugins/SQLite/android/arm64-v8a/libsqlite3.so
+  artifactKey: Guid(d11ec282511b335448519bb7d426c9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/arm64-v8a/libsqlite3.so using Guid(d11ec282511b335448519bb7d426c9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1f446b7bf59149e0c64c55424a031d') in 0.003683 seconds 
+  Import took 0.009374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.955892 seconds.
+  path: Assets/Plugins/SQLite/android/armeabi-v7a/libsqlite3.so
+  artifactKey: Guid(7d66b7d6b770262479609b3edca1f7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/armeabi-v7a/libsqlite3.so using Guid(7d66b7d6b770262479609b3edca1f7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eb17d45feb2f1f52546ebb9ca12fb05') in 0.004048 seconds 
+  Import took 0.007481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.579868 seconds.
+  path: Assets/Plugins/SQLite/android/armeabi-v7a/libsqlite3.so
+  artifactKey: Guid(7d66b7d6b770262479609b3edca1f7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/armeabi-v7a/libsqlite3.so using Guid(7d66b7d6b770262479609b3edca1f7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c19ae3b39173949fcdc00720d4a64d93') in 0.004113 seconds 
+  Import took 0.009321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.946354 seconds.
+  path: Assets/Plugins/SQLite/android/x86/libsqlite3.so
+  artifactKey: Guid(633b04c57e380f94898eaae412a7ac26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/x86/libsqlite3.so using Guid(633b04c57e380f94898eaae412a7ac26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ae08ccf2c26315c7a6892aa2db24a4e') in 0.004015 seconds 
+  Import took 0.033694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.939867 seconds.
+  path: Assets/Plugins/SQLite/android/x86/libsqlite3.so
+  artifactKey: Guid(633b04c57e380f94898eaae412a7ac26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/android/x86/libsqlite3.so using Guid(633b04c57e380f94898eaae412a7ac26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6370f08ff011d79fd4287c2c77e7fd80') in 0.004522 seconds 
+  Import took 0.009644 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020871 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.168 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1170ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (935ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (327ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (344ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1503 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.6 MB.
+System memory in use after: 67.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1937.
+Total: 3.121200 ms (FindLiveObjects: 0.164900 ms CreateObjectMapping: 0.054600 ms MarkObjects: 2.872600 ms  DeleteObjects: 0.027200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 659.436248 seconds.
+  path: Assets/Plugins/SQLite/Mono.Data.Sqlite.dll
+  artifactKey: Guid(a7bff2e9db8d2c745a844167a0b8e642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SQLite/Mono.Data.Sqlite.dll using Guid(a7bff2e9db8d2c745a844167a0b8e642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2241aace4f770a09de805784d16b4d') in 0.012287 seconds 
+  Import took 0.035463 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
