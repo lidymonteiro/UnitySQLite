@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Mono.Data.Sqlite;
 using System.IO;
+using System;
 
 public class DatabaseBuilder : MonoBehaviour
 {
@@ -23,7 +24,18 @@ public class DatabaseBuilder : MonoBehaviour
 
         //CreateDatabaseFileIfNotExists();
         CopyDatabaseFileIfNotExists();
+
+        try
+        {
+            CreateTable();
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Database not created! {e.Message}");
+        }
     }
+
+    #region Create database
 
     private void CopyDatabaseFileIfNotExists()
     {
@@ -70,8 +82,7 @@ public class DatabaseBuilder : MonoBehaviour
             Debug.Log($"Database path: {this.databasePath}");
         }
     }
- 
-    
+   
     private IEnumerator GetInternalFileAndroid(string path)
     {
         var request = UnityWebRequest.Get(path);
@@ -87,4 +98,29 @@ public class DatabaseBuilder : MonoBehaviour
             Debug.Log("File copied!");
         }
     }
+
+    #endregion
+
+    protected void CreateTable()
+    {
+        using (var conn = Connection)
+        {
+            var commandText = $"CREATE TABLE TabelaTeste " +
+            $"(" +
+            $"  Id INTERGER PRIMARY KEY, " +
+            $"  Description TEXT NOT NULL, " +
+            $"  Value REAL" +
+            $");";
+
+            conn.Open();
+
+            using (var command = conn.CreateCommand())
+            {
+                command.CommandText = commandText;
+                command.ExecuteNonQuery();
+                Debug.Log("Command create table!");
+            }
+        }
+    }
+
 }
