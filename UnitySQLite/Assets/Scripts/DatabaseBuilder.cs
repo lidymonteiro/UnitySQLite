@@ -35,6 +35,7 @@ public class DatabaseBuilder : MonoBehaviour
             //Debug.Log(GetCharacter(1));
             //Debug.Log(DeleteCharacter(1));
             //Debug.Log("UPDATE CHARACTER: " + UpdateCharacter(1, "Lid Monteiro", 400, 75, 6, 7, 1));
+            InsertDataCharacter("Mariana", 2, 1, 3, 10, 1);
         }
         catch (Exception e)
         {
@@ -200,7 +201,7 @@ public class DatabaseBuilder : MonoBehaviour
                 command.Parameters.AddWithValue("@health", health);
                 command.Parameters.AddWithValue("@weaponId", weaponId);
 
-                var result = command.ExecuteNonQuery();
+                var result = command.ExecuteNonQueryWithFK();
                 Debug.Log($"INSERT CHARACTER: {result.ToString()}");
             }
         }
