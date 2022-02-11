@@ -27,7 +27,14 @@ public class DatabaseBuilder : MonoBehaviour
 
         try
         {
-            CreateTable();
+            //CreateTableWeapon();
+            //CreateTableCharacter();
+            //InsertDataWeapon("Sword", 10, 25.89d);
+            //InsertDataCharacter("Kaz", 2, 1, 3, 10, 1);
+            //InsertDataCharacter("Kaz", 2, 1, 3, 10, 1);
+            //Debug.Log(GetCharacter(1));
+            //Debug.Log(DeleteCharacter(1));
+            //Debug.Log("UPDATE CHARACTER: " + UpdateCharacter(1, "Lid Monteiro", 400, 75, 6, 7, 1));
         }
         catch (Exception e)
         {
@@ -101,26 +108,188 @@ public class DatabaseBuilder : MonoBehaviour
 
     #endregion
 
-    protected void CreateTable()
+    protected void CreateTableCharacter()
     {
-        using (var conn = Connection)
+        var commandText = 
+           "CREATE TABLE Character " +
+           "(" +
+           "   Id INTEGER PRIMARY KEY, " +
+           "   Name TEXT NOT NULL, " +
+           "   Attack INTEGER NOT NULL, " +
+           "   Defense INTEGER NOT NULL, " +
+           "   Agility INTEGER NOT NULL, " +
+           "   Health INTEGER NOT NULL, " +
+           "   WeaponId INTEGER," +
+           "   FOREIGN KEY (WeaponId) REFERENCES Weapon(Id) ON UPDATE CASCADE ON DELETE RESTRICT" +
+           ");";
+
+        using (var connection = Connection)
         {
-            var commandText = $"CREATE TABLE TabelaTeste " +
-            $"(" +
-            $"  Id INTERGER PRIMARY KEY, " +
-            $"  Description TEXT NOT NULL, " +
-            $"  Value REAL" +
-            $");";
-
-            conn.Open();
-
-            using (var command = conn.CreateCommand())
+            connection.Open();
+            using (var command = connection.CreateCommand())
             {
                 command.CommandText = commandText;
                 command.ExecuteNonQuery();
-                Debug.Log("Command create table!");
+                Debug.Log("Create table Character...");
             }
         }
     }
+
+
+    protected void CreateTableWeapon()
+    {
+        var commandText =
+            "CREATE TABLE Weapon" +
+            "(" +
+            "   Id INTEGER PRIMARY KEY, " +
+            "   Name TEXT NOT NULL, " +
+            "   Attack INTEGER NOT NULL, " +
+            "   Price REAL NOT NULL" +
+            "); ";
+
+        using (var connection = Connection)
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = commandText;
+                command.ExecuteNonQuery();
+                Debug.Log("Create table Weapon...");
+            }
+        }
+    }
+
+    
+    protected void InsertDataWeapon(string name, int attack, double price)
+    {
+        var commandText = "INSERT INTO Weapon(Name, Attack, Price) VALUES (@name, @attack, @price);";
+
+        using (var connection = Connection)
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = commandText;
+
+                command.Parameters.AddWithValue("@name", name);
+                command.Parameters.AddWithValue("@attack", attack);
+                command.Parameters.AddWithValue("@price", price);
+
+                var result = command.ExecuteNonQuery();
+                Debug.Log($"INSERT WEAPON: {result.ToString()}");
+            }
+        }
+    }
+
+    
+    protected void InsertDataCharacter(string name, int attack, int defense, int agility, int health, int weaponId)
+    {
+        var commandText = "INSERT INTO Character(Name, Attack, Defense, Agility, Health, WeaponId) VALUES (@name, @attack, @defense, @agility, @health, @weaponId);";
+
+        using (var connection = Connection)
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = commandText;
+
+                command.Parameters.AddWithValue("@name", name);
+                command.Parameters.AddWithValue("@attack", attack);
+                command.Parameters.AddWithValue("@defense", defense);
+                command.Parameters.AddWithValue("@agility", agility);
+                command.Parameters.AddWithValue("@health", health);
+                command.Parameters.AddWithValue("@weaponId", weaponId);
+
+                var result = command.ExecuteNonQuery();
+                Debug.Log($"INSERT CHARACTER: {result.ToString()}");
+            }
+        }
+    }
+
+
+    protected string GetCharacter(int id)  
+    {
+        var commandText = "SELECT * FROM Character WHERE Id = @id;";
+        var result = "None";
+
+        using (var connection = Connection)
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = commandText;
+
+                command.Parameters.AddWithValue("@id", id);
+
+                var reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    result = $"Id: {reader["Id"]}, " +
+                        $"Name: {reader.GetString(1)}, " +
+                        $"Attack: {reader["Attack"]}, " +
+                        $"Defense: {reader["Defense"]}, " +
+                        $"Agility: {reader["Agility"]}, " +
+                        $"Health: {reader["Health"]}, " +
+                        $"Weapon Id: {reader["WeaponId"]}";
+                }
+                Debug.Log($"SELECT CHARACTER...");
+                return result;
+            }
+        }   
+    }
+
+
+    protected int DeleteCharacter(int id)
+    {
+        var commandText = "DELETE FROM Character WHERE Id = @id;";
+
+        using (var connection = Connection)
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = commandText;
+                command.Parameters.AddWithValue("@id", id);
+                Debug.Log($"DELETE CHARACTER...");
+                return command.ExecuteNonQuery();
+            }
+        }
+    }
+
+
+    protected int UpdateCharacter(int id, string name, int attack, int defense, int agility, int health, int weaponId)
+    {
+        var commandText =
+            "UPDATE Character SET " +
+            "Name = @name, " +
+            "Attack = @attack, " +
+            "Defense = @defense, " +
+            "Agility = @agility, " +
+            "Health = @health, " +
+            "WeaponId = @weaponId " +
+            "WHERE Id = @id;";
+
+        using (var connection = Connection)
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = commandText;
+
+                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@name", name);
+                command.Parameters.AddWithValue("@attack", attack);
+                command.Parameters.AddWithValue("@defense", defense);
+                command.Parameters.AddWithValue("@agility", agility);
+                command.Parameters.AddWithValue("@health", health);
+                command.Parameters.AddWithValue("@weaponId", weaponId);
+
+                return command.ExecuteNonQuery();
+               
+            }
+        }
+    }
+
 
 }
